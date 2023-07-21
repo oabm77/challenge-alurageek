@@ -1,0 +1,51 @@
+.cabecera {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.cabecera__busqueda {
+    margin: 20px auto;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.busqueda__entrada {
+    width: 100%;
+    padding: 8px 16px 8px 16px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background-color: #F5F5F5;
+}
+
+.busqueda__boton {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+}
+
+.busqueda__boton img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.cabecera__botonlogin {
+    background: transparent;
+    border: 1px solid #2A7AE4;
+    border-radius: 5px;
+    color: #2A7AE4;
+    padding: 0.5rem;
+}
+
+.cabecera__botonlogin:hover {
+    cursor: pointer;
+    background: #2A7AE4;
+    color: #ffffff;
+}

@@ -1,0 +1,50 @@
+.categorias {
+    margin: 1.5rem 4rem;
+    padding-bottom: 1.5rem;
+    font-family: Raleway, cursive;
+}
+
+.categoria {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.categoria__titulo {
+    color: #464646;
+}
+
+.categoria__vertodo {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.producto__nombre {
+    margin: 0.5rem 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #464646;
+}
+
+.producto__precio {
+    margin: 0.5rem 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+}
+
+.producto__enlace {
+    margin: 0.5rem 0;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2A7AE4;
+}
