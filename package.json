@@ -1,0 +1,24 @@
+{
+  "name": "challenge-alurageek",
+  "version": "1.0.0",
+  "description": "Alura Latam 2nd Challenge - AluraGeek",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oabm77/challenge-alurageek.git"
+  },
+  "keywords": [
+    "alura",
+    "alurageek",
+    "frontend"
+  ],
+  "author": "Omar Bautista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oabm77/challenge-alurageek/issues"
+  },
+  "homepage": "https://github.com/oabm77/challenge-alurageek#readme"
+}

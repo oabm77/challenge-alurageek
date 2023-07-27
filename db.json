@@ -1,0 +1,130 @@
+{
+  "productos": [
+    {
+      "category": "Star Wars",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/D1jrjsm/starwars01.png",
+      "price": "60",
+      "id": 1
+    },
+    {
+      "category": "Star Wars",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/sj1W5DX/starwars02.png",
+      "price": "60",
+      "id": 2
+    },
+    {
+      "category": "Star Wars",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/gj1qgSP/starwars03.png",
+      "price": "60",
+      "id": 3
+    },
+    {
+      "category": "Star Wars",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/51fNMDM/starwars04.png",
+      "price": "60",
+      "id": 4
+    },
+    {
+      "category": "Star Wars",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/C2rfHKN/starwars05.png",
+      "price": "60",
+      "id": 5
+    },
+    {
+      "category": "Star Wars",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/HgX4NPP/starwars06.png",
+      "price": "60",
+      "id": 6
+    },
+    {
+      "category": "Consolas",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/qmZzShW/consola01.png",
+      "price": "60",
+      "id": 7
+    },
+    {
+      "category": "Consolas",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/xHFQFbR/consola02.png",
+      "price": "60",
+      "id": 8
+    },
+    {
+      "category": "Consolas",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/9bJfrLp/consola03.png",
+      "price": "60",
+      "id": 9
+    },
+    {
+      "category": "Consolas",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/f9rjd67/consola04.png",
+      "price": "60",
+      "id": 10
+    },
+    {
+      "category": "Consolas",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/NxY6sf9/consola05.png",
+      "price": "60",
+      "id": 11
+    },
+    {
+      "category": "Consolas",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/yPf4HJ5/consola06.png",
+      "price": "60",
+      "id": 12
+    },
+    {
+      "category": "Diversos",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/d4yYZkv/diversos01.png",
+      "price": "60",
+      "id": 13
+    },
+    {
+      "category": "Diversos",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/58pHB72/diversos02.png",
+      "price": "60",
+      "id": 14
+    },
+    {
+      "category": "Diversos",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/pZxx7Rh/diversos03.png",
+      "price": "60",
+      "id": 15
+    },
+    {
+      "category": "Diversos",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/bvG0nZd/diversos04.png",
+      "price": "60",
+      "id": 16
+    },
+    {
+      "category": "Diversos",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/zfTsnc6/diversos05.png",
+      "price": "60",
+      "id": 17
+    },
+    {
+      "category": "Diversos",
+      "name": "Producto XYZ",
+      "imageUrl": "https://i.ibb.co/hdJzhQ2/diversos06.png",
+      "price": "60",
+      "id": 18
+    }
+  ]
+}

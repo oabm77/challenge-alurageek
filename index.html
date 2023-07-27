@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="assets/css/cabecera.css">
         <link rel="stylesheet" href="assets/css/banner.css">
         <link rel="stylesheet" href="assets/css/categorias.css">
+        <link rel="stylesheet" href="assets/css/rodapie.css">
     </head>
     <body>
         <header class="cabecera">
@@ -34,136 +35,39 @@
             </div>
         </section>
         <section class="categorias">
-            <div class="categoria">
-                <h2 class="categoria__titulo">Star Wars</h2>
-                <a class="categoria__vertodo" href="#">Ver todo &#x2794;</a>
-            </div>
-            <div class="productos">
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/starwars01.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/starwars02.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/starwars03.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/starwars04.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/starwars05.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/starwars06.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-            </div>
+            
         </section>
-        <section class="categorias">
-            <div class="categoria">
-                <h2 class="categoria__titulo">Consolas</h2>
-                <a class="categoria__vertodo" href="#">Ver todo &#x2794;</a>
-            </div>
-            <div class="productos">
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/consola01.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/consola02.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/consola03.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/consola04.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/consola05.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/consola06.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
+        <footer class="rodapie">
+            <div class="rodapie__contacto">
+                <div class="contacto">
+                    <img class="contacto__logo" src="assets/img/Logo_rodapie.png" alt="Logo ALura">
+                    <ul class="contacto__enlaces">
+                        <li><a class="contacto__enlace" href="#">Quienes somos</a></li>
+                        <li><a class="contacto__enlace" href="#">Política de privacidad</a></li>
+                        <li><a class="contacto__enlace" href="#">Programa de fidelidad</a></li>
+                        <li><a class="contacto__enlace" href="#">Nuestras Tiendas</a></li>
+                        <li><a class="contacto__enlace" href="#">Quiero ser franquiciado</a></li>
+                        <li><a class="contacto__enlace" href="#">Anúncie aquí</a></li>
+                    </ul>
+                    <form class="contacto__formulario" method="post">
+                        <h3 class="formulario__titulo">Hable con nosotros</h3>
+                        <div class="formulario__input--contenedor">
+                            <input type="text" class="formulario__input" id="nombre" name="nombre">
+                            <label class="formulario__label" for="nombre">Nombre</label>
+                        </div>
+                        <div class="formulario__input--contenedor">
+                            <textarea class="formulario__textbox" id="mensaje" name="mensaje" cols="30" rows="3"></textarea>
+                            <label class="formulario__label" for="mensaje">Escribe tu mensaje</label>
+                        </div>
+                        <button class="formulario__button">Enviar mensaje</button>
+                    </form>
                 </div>
             </div>
-        </section>
-        <section class="categorias">
-            <div class="categoria">
-                <h2 class="categoria__titulo">Diversos</h2>
-                <a class="categoria__vertodo" href="#">Ver todo &#x2794;</a>
+            <div class="rodapie__desarrollador">
+                <p>Desarrollado por Omar Bautista</p>
+                <p>2021</p>
             </div>
-            <div class="productos">
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/diversos01.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/diversos02.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/diversos03.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/diversos04.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/diversos05.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-                <div class="producto">
-                    <img class="producto__imagen" src="assets/img/diversos06.png" alt="">
-                    <p class="producto__nombre">Producto XYZ</p>
-                    <p class="producto__precio">$ 60.00</p>
-                    <a class="producto__enlace" href="#">Ver producto</a>
-                </div>
-            </div>
-        </section>
+        </footer>
+        <script type="module" src="script.js"></script>
     </body>
 </html>
