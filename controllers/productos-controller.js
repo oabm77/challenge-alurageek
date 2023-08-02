@@ -1,7 +1,7 @@
 const nuevoProducto = (name,imageUrl,price,id,view) =>  {
     const card = document.createElement("div");
     card.classList.add('producto');
-    let enlace = `<a class="producto__enlace" href="../producto.html?id=${id}">Ver producto</a>`
+    let enlace = `<a class="producto__enlace" href="./producto.html?id=${id}">Ver producto</a>`
     if (view === 'productos') {
         enlace = `<p class="producto__codigo">#${id.toString().padStart(6, '0')}</p>`
     }

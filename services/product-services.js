@@ -8,7 +8,8 @@ const listaProductos = () => {
 }
 
 const listarUnProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`)
+    // return fetch(`http://localhost:3000/productos/${id}`)
+    return fetch(`https://64c9c8a8b2980cec85c26989.mockapi.io/producto/${id}`)
     .then(respuesta => respuesta.json())
 }
 
