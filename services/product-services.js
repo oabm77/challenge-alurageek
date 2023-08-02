@@ -1,24 +1,31 @@
 // GET
 
 const listaProductos = () => {
-    return fetch("http://localhost:3000/productos")
+    // return fetch("http://localhost:3000/productos")
+    return fetch("https://64c9c8a8b2980cec85c26989.mockapi.io/producto")
     .then(respuesta => respuesta.json())
     .catch(error => console.log(error))
 }
 
+const listarUnProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`)
+    .then(respuesta => respuesta.json())
+}
+
 // POST
 
-const crearProductos = (imageURL, name, price, category) => {
-    fetch('http://localhost:3000/productos', {
+const crearProductos = (imageUrl, name, price, category) => {
+    // return fetch('http://localhost:3000/productos', {
+    return fetch('https://64c9c8a8b2980cec85c26989.mockapi.io/producto', {
         method: "POST",
         headers: {
             "Content-type": "application/json"
         },
         body: JSON.stringify({
-            imageURL,
-            price,
+            category,
             name,
-            category})
+            imageUrl,
+            price})
     }).then(respuesta => {
         if(respuesta.ok) {
             return respuesta.body
@@ -29,5 +36,6 @@ const crearProductos = (imageURL, name, price, category) => {
 
 export const productServices = {
     listaProductos,
+    listarUnProducto,
     crearProductos
 }

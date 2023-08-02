@@ -7,7 +7,7 @@
 }
 
 .cabecera__busqueda {
-    margin: 20px auto;
+    margin: 1.25rem auto 1.25rem 0.625rem;
     width: 300px;
     height: 40px;
     display: flex;
@@ -36,16 +36,65 @@
     object-fit: cover;
 }
 
-.cabecera__botonlogin {
+.cabecera__botonlogin,
+.cabecera__botonadmin {
     background: transparent;
     border: 1px solid #2A7AE4;
     border-radius: 5px;
     color: #2A7AE4;
     padding: 0.5rem;
+    text-decoration: none;
+    min-width: 150px;
+    text-align: center;
 }
 
-.cabecera__botonlogin:hover {
+.cabecera__botonlogin:hover,
+.cabecera__botonadmin:hover {
     cursor: pointer;
     background: #2A7AE4;
     color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .cabecera {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 3rem;
+    }
+
+    .cabecera__logo {
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .cabecera {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .busqueda__entrada {
+        display: none;
+    }
+
+    .cabecera__logo {
+        width: 8rem;
+        margin-right: 1rem;
+        order: 1;
+    }
+
+    .cabecera__busqueda {
+        order: 3;
+    }
+
+    .busqueda__boton {
+        margin-left: 1rem;
+        
+    }
+
+    .cabecera__botonlogin {
+        order: 2;
+    }
+
 }

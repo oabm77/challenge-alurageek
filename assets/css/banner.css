@@ -5,15 +5,14 @@
 
 .banner__imagen {
     background: url('../img/banner.png') no-repeat center / cover;
-    height: calc(50vh - 36px);
+    height: calc(50vh - 2.25rem);
 }
 
 .banner__contenedor {
     position: absolute;
-    left: 55%;
+    left: 4rem;
     top: 50%;
     text-align: left;
-    transform: translate(-50%, -50%);
     width: 100%;
 }
 
@@ -37,4 +36,25 @@
     cursor: pointer;
     background-color: #ffffff;
     color: #2A7AE4;
+}
+
+@media screen and (max-width: 768px) {
+    .banner__contenedor {
+        left: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .banner__contenedor {
+        left: 0.5rem;
+    }
+
+    .banner__titulo {
+        font-size: 22px;
+    }
+    
+    .banner__subtitulo {
+        font-size: 14px;
+    }
 }

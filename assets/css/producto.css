@@ -1,0 +1,15 @@
+.informacion {
+    font-family: Raleway, cursive;
+    padding-bottom: 2rem;;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto__etiqueta {
+    font-weight: bold;
+    justify-self: start;
+}

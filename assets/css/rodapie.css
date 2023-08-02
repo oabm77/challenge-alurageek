@@ -42,9 +42,11 @@
 .formulario__input--contenedor {
     position: relative;
     margin: 0.5rem 0;
+    width: 100%;
 }
 
 .formulario__input, .formulario__textbox {
+    box-sizing: border-box;
     border: 0;
     border-bottom: 3px solid #ffffff;
     outline: none;
@@ -59,6 +61,8 @@
     display: flex;
     align-items: center;
     cursor: text;
+    font-size: 1em;
+    height: 55px;
     transition: .3s ease-in-out;
 }
 
@@ -78,26 +82,77 @@
     padding-right: 15px;
 }
 
-.formulario__label {
-    font-size: 1em;
-    width: 40%;
-    height: 55px;
-}
-
 .formulario__input:focus + .formulario__label,
-.formulario__textbox:focus + .formulario__label {
+.formulario__input:valid + .formulario__label,
+.formulario__textbox:focus + .formulario__label,
+.formulario__textbox:valid + .formulario__label {
     font-size: .75em;
     top: -15px;
     pointer-events: none;
 }
 
 .formulario__button {    
-    align-self: flex-start;
     background-color: #2A7AE4;
     color: #FFFFFF;
+    border: none;
     padding: 1rem;
+    cursor: pointer;
+}
+
+.formulario__button:hover {
+    color: #2A7AE4;
+    background-color: #FFFFFF;
+}
+
+.formulario__contacto {
+    align-self: flex-start;
 }
 
 .rodapie__desarrollador {
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contacto {
+        margin: 1rem 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .rodapie__contacto {
+        padding-top: 1.5rem;
+        padding-bottom: 4rem;
+    }
+
+    .contacto__enlaces {
+        height: 260px;
+        position: absolute;
+        margin-top: 60px;
+    }
+
+    .contacto__formulario {
+        margin-top: 2rem;
+    }
+
+    .formulario__titulo {
+        align-self: start;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .contacto {
+        margin: 0.5rem;
+        display: block;
+        text-align: center;
+    }
+
+    .rodapie__contacto {
+        padding-bottom: 1rem;
+    }
+
+    .contacto__enlaces {
+        position: relative;
+        margin-top: 0px;
+    }
+
 }

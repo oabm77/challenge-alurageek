@@ -1,0 +1,108 @@
+.formulario {
+    background-color: #F5F5F5;
+    padding: 5rem 0;
+}
+
+.login__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    width: 25rem;
+}
+
+.login__titulo {
+    padding-bottom: 1.5rem;
+}
+
+.login__input--contenedor {
+    position: relative;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.login__input {
+    box-sizing: border-box;
+    font-size: 1.25em;
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    border: 0;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
+.login__label {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    font-size: 1em;
+    height: 55px;
+    transition: .3s ease-in-out;
+}
+
+.login__input:focus + .login__label,
+.login__input:valid + .login__label {
+    font-size: .75em;
+    top: -15px;
+    pointer-events: none;
+}
+
+.login__button {    
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login__button:hover {
+    color: #2A7AE4;
+    background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .formulario {
+        padding: 2.5rem 0;
+    }
+
+    .login__titulo {
+        padding-bottom: 0.5rem;
+    }
+
+    .login__input {
+        font-size: 1em;
+        width: 100%;
+        height: 45px;
+    }
+
+    .login__label {
+        height: 45px;
+    }
+
+    .login__button {    
+        padding: 0.5rem 1.5rem;
+        width: auto;
+    }
+
+    .login__input--contenedor {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .formulario {
+        padding: 5rem 0.5rem;
+    }
+
+    .login__input--contenedor {
+        width: auto;
+    }
+}

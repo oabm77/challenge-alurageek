@@ -3,16 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AluraGeek - Home</title>
+        <title>AluraGeek - Productos</title>
         <meta name="description" content="Challenge ONE Front-End. Sprint 02 - AluraGeek: Creando tu proprio e-commerce.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AluraGeek - e-commerce</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/cabecera.css">
-        <link rel="stylesheet" href="assets/css/banner.css">
-        <link rel="stylesheet" href="assets/css/categorias.css">
+        <link rel="stylesheet" href="assets/css/agregarproducto.css">
         <link rel="stylesheet" href="assets/css/rodapie.css">
     </head>
     <body>
@@ -24,18 +22,35 @@
                     <img src="assets/img/search_icon.png">
                 </button>
             </div>
-            <a class="cabecera__botonlogin" href="./login.html">Login</a>
+            <a class="cabecera__botonadmin" href="./productos.html">Menú Administrador</a>
         </header>
-        <section class="banner">
-            <div class="banner__imagen"></div>
-            <div class="banner__contenedor">
-                <h1 class="banner__titulo">Agosto Promocional</h1>
-                <h3 class="banner__subtitulo">Productos selecionados con 33% de descuento</h3>
-                <button type="button" class="banner__boton">Ver Consolas</button>
-            </div>
-        </section>
-        <section class="categorias">
-            
+        <section class="formulario">
+            <form class="agregar__formulario" autocomplete="off" data-form>
+                <h3 class="agregar__titulo">Agregar nuevo producto</h3>
+                <div class="agregar__input--contenedor">
+                    <input type="url" class="agregar__input" id="imageUrl" name="imageUrl" autocomplete="off" required data-url>
+                    <label class="agregar__label" for="imageUrl">URL de imagen</label>
+                </div>
+                <div class="agregar__input--contenedor">
+                    <input type="text" class="agregar__input" id="category" name="category" autocomplete="off" required data-categoria>
+                    <label class="agregar__label" for="category">Categoría</label>
+                </div>
+                <div class="agregar__input--contenedor">
+                    <input type="text" class="agregar__input" id="name" name="name" autocomplete="off" required data-nombre>
+                    <label class="agregar__label" for="name">Nombre del producto</label>
+                </div>
+                <div class="agregar__input--contenedor">
+                    <input type="text" class="agregar__input" id="price" name="price" autocomplete="off" required data-precio>
+                    <label class="agregar__label" for="price">Precio del producto</label>
+                </div>
+                <div class="agregar__input--contenedor">
+                    <textarea class="agregar__textbox" id="description" name="description" cols="30" rows="3" required></textarea>
+                    <label class="agregar__label" for="description">Descripción del producto</label>
+                </div>
+                <div class="agregar__input--contenedor">
+                    <button class="agregar__button" type="submit">Agregar producto</button>
+                </div>
+            </form>
         </section>
         <footer class="rodapie">
             <div class="rodapie__contacto">
@@ -52,11 +67,11 @@
                     <form class="contacto__formulario" method="post">
                         <h3 class="formulario__titulo">Hable con nosotros</h3>
                         <div class="formulario__input--contenedor">
-                            <input type="text" class="formulario__input" id="nombre" name="nombre">
+                            <input type="text" class="formulario__input" id="nombre" name="nombre" required>
                             <label class="formulario__label" for="nombre">Nombre</label>
                         </div>
                         <div class="formulario__input--contenedor">
-                            <textarea class="formulario__textbox" id="mensaje" name="mensaje" cols="30" rows="3"></textarea>
+                            <textarea class="formulario__textbox" id="mensaje" name="mensaje" cols="30" rows="3" required></textarea>
                             <label class="formulario__label" for="mensaje">Escribe tu mensaje</label>
                         </div>
                         <button class="formulario__button formulario__contacto">Enviar mensaje</button>
@@ -68,6 +83,7 @@
                 <p>2023</p>
             </div>
         </footer>
-        <script type="module" src="js/index.js"></script>
+        <script type="module" src="controllers/crear-productos.controller.js"></script>
+        <script src="js/agregarproducto.js"></script>
     </body>
 </html>

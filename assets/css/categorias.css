@@ -4,7 +4,7 @@
     font-family: Raleway, cursive;
 }
 
-.categoria_header {
+.categoria__header {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1rem;
@@ -27,6 +27,10 @@
     flex-wrap: wrap;
 }
 
+.producto {
+    padding: 1rem 0.125rem;
+}
+
 .producto__nombre {
     margin: 0.5rem 0;
     font-weight: 500;
@@ -47,4 +51,22 @@
     font-size: 16px;
     text-decoration: none;
     color: #2A7AE4;
+}
+
+@media screen and (max-width: 768px) {
+    .categoria {
+        margin: 1rem 1rem;
+    }
+
+    .producto {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .categoria {
+        margin: 0.5rem 0.5rem;
+    }
+
 }
